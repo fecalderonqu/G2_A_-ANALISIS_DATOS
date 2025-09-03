@@ -85,6 +85,30 @@ Un dataset consolidado con las siguientes columnas finales:
   - `scikit-learn` → Machine Learning.  
 
 
-## 3. Principales hallazgos del análisis
+# 3. Principales hallazgos del análisis
 
-## 4. Cualquier insight o conclusión relevante  
+- La felicidad se asocia con un conjunto de factores: economía (gdp_per_capita), redes de apoyo (social_support), salud (life_expectancy) y libertades (freedom).
+
+- Se observan rendimientos decrecientes del PIB: pasar de bajo a medio PIB mejora mucho la felicidad, pero el salto de alto a muy alto PIB aporta menos.
+
+- Social support y life_expectancy actúan como “amortiguadores”: países con PIB medio pero alto apoyo social y buena salud alcanzan niveles de felicidad comparables a economías más ricas.
+
+- Corruption tiene relación negativa y erosiona el efecto del PIB y la libertad: a mayor corrupción percibida, menor felicidad a igual nivel de riqueza.
+
+- Generosity muestra baja correlación directa; su efecto parece indirecto/contextual (convive con apoyo social y cultura cívica).
+
+
+# 4. Cualquier insight o conclusión relevante
+
+**Insight:** La felicidad no depende de un solo factor, sino de un balance entre riqueza, salud, libertad y redes de apoyo.  
+
+**Insight:** El mapa de calor mundial de felicidad (Plotly) muestra un patrón geográfico claro → Europa y Oceanía lideran; África central y Medio Oriente presentan los valores más bajos. 
+
+**Insight:** El modelo confirma que la **economía**, la **salud** y las **redes de apoyo social** son los predictores más fuertes de la felicidad. 
+
+### Conclusiones 
+
+- La **felicidad de un país** depende principalmente de factores **económicos, sociales y de salud**.  
+- La **corrupción y generosidad**, aunque relevantes, no muestran un impacto tan fuerte en la predicción.  
+- El **Random Forest** es un modelo adecuado para predecir el happiness score con alta precisión.  
+- Los países con mayor felicidad suelen tener un balance entre **bienestar material y social**. 
